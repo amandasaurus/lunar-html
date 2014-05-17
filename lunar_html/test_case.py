@@ -8,6 +8,10 @@ import cssselect
 
 from unittest import TestCase
 
+class LunarHTMLException(Exception): pass
+
+class LunarHTMLElementNotFoundException(LunarHTMLException): pass
+
 class BaseLunarHTMLTestCase():
 
     def assertContainsRegex(self, *regexes):
