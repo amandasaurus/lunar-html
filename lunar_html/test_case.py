@@ -248,7 +248,7 @@ class BaseLunarHTMLTestCase():
             elif field.tag in ['input', 'textarea']:
                 if field.attrib.get("type") == 'checkbox':
                     if field_value:
-                        results[field_name] = field_name
+                        results[field_name] = field_value
                     else:
                         pass
                 else:
